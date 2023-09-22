@@ -4,6 +4,7 @@ WORKDIR ./home
 
 ADD . .
 
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 expose 8000
